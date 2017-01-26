@@ -1,0 +1,57 @@
+@import "bootstrap";
+@import "font-awesome";
+@import "hamburger-icon";
+
+.navigation-nav { 
+    .nav-link {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    @include media-breakpoint-up(md) {
+        .nav-item:not(:last-child) .nav-link::after {
+            color: $navbar-inverse-color;
+            margin-left: 8px;
+            margin-right: -8px;
+            content: '|';
+        }
+    }
+}
+.navbar-toggler {
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.static-nav-container {
+    display: flex;
+    align-self: flex-end;
+    .navbar-nav {
+        flex-direction: row;
+
+        .nav-link {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        order: 1;
+    }
+}
+
+.search-form {
+    flex-wrap: nowrap;
+    .search-input {
+        border: 2px solid #353535;
+        display: none;
+    }
+    .search-btn {
+        background: #353535;
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+        z-index: 1;
+    }
+    &.open {
+        .search-input {
+            display: block;
+        }
+    }
+}
