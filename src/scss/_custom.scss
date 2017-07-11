@@ -1,0 +1,15 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$enable-rounded: false;
+
+$navbar-padding-y: 0;
+
+$brand-inverse: #0c0c0c;
+
+$navbar-inverse-color: rgba($white, 0.8);
+$navbar-inverse-hover-color: rgba($white, 1);
+$navbar-inverse-active-color: rgba($white, 1);
+$navbar-inverse-disabled-color: rgba($white, 0.25);
