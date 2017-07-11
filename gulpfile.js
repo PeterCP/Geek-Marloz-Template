@@ -12,7 +12,7 @@ var path = require('path'),
 var config = {
     nodeModules: path.join(__dirname, 'node_modules'),
     srcPath: path.join(__dirname, 'src'),
-    distPath: path.join(__dirname, 'dist')
+    distPath: path.join(__dirname, 'docs')
 };
 
 gulp.task('css', function() {
