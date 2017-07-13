@@ -40,17 +40,17 @@ $gray-custom: #aaa;
 .post-container {
     padding-top: 50px;
     padding-bottom: 50px;
-    border-bottom: 2px solid $black-dark;
+    border-bottom: 1px solid $black-normal;
 
     &:first-child {
-        border-top: 2px solid $black-dark;
+        border-top: 1px solid $black-normal;
     }
 
     .post-title {
         text-align: center;
         padding-bottom: 15px;
         margin-bottom: 15px;
-        border-bottom: 2px solid $black-light;
+        border-bottom: 1px solid $black-light;
         a {
             font-size: 1.3em;
             line-height: 1em;
@@ -84,5 +84,12 @@ $gray-custom: #aaa;
         .post-image {
             margin-bottom: 15px;
         }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }

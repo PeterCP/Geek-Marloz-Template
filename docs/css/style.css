@@ -11800,18 +11800,18 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .post-container {
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .post-container:first-child {
-  border-top: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .post-container .post-title {
   text-align: center;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .post-container .post-title a {
@@ -11853,5 +11853,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media (max-width: 991px) {
   .post-container .post-image {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
