@@ -12,7 +12,7 @@
     height: 2px;
     border-radius: 1px;
     width: 100%;
-    background: $navbar-inverse-active-color;
+    background: $navbar-light-color;
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
@@ -34,9 +34,13 @@
     }
   }
 
-  // &:hover .icon-bar {
-  //   background: $navbar-inverse-active-color;
-  // }
+  &:hover .icon-bar {
+    background: $navbar-light-hover-color;
+  }
+
+  &:active .icon-bar {
+    background: $navbar-light-active-color;
+  }
 
   &.open {
     .icon-bar.icon-bar-1 {

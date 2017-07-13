@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Karla");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -4083,11 +4084,11 @@ tbody.collapse.show {
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .navbar-inverse .navbar-nav .nav-link.disabled {
@@ -4110,7 +4111,7 @@ tbody.collapse.show {
 }
 
 .navbar-inverse .navbar-text {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .card {
@@ -5678,11 +5679,11 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 .bg-inverse {
-  background-color: #0c0c0c !important;
+  background-color: #292b2c !important;
 }
 
 a.bg-inverse:focus, a.bg-inverse:hover {
-  background-color: black !important;
+  background-color: #101112 !important;
 }
 
 .border-0 {
@@ -11740,7 +11741,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   height: 2px;
   border-radius: 1px;
   width: 100%;
-  background: white;
+  background: rgba(0, 0, 0, 0.5);
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -11767,6 +11768,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
           transform-origin: left center;
 }
 
+.hamburger-icon:hover .icon-bar {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hamburger-icon:active .icon-bar {
+  background: rgba(0, 0, 0, 0.9);
+}
+
 .hamburger-icon.open .icon-bar.icon-bar-1 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -11789,70 +11798,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .navigation-nav .nav-link {
   text-transform: uppercase;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .navigation-nav .nav-item:not(:last-child) .nav-link::after {
-    color: rgba(255, 255, 255, 0.6);
-    margin-left: 8px;
-    margin-right: -8px;
-    content: '|';
-  }
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
 }
 
 .navbar-toggler {
+  outline: none !important;
   border: none;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.static-nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.static-nav-container .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.static-nav-container .navbar-nav .nav-link {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .static-nav-container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-}
-
-.search-form {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.search-form .search-input {
-  border: 2px solid #353535;
-  display: none;
-}
-
-.search-form .search-btn {
-  background: #353535;
-  padding-left: 0.8rem !important;
-  padding-right: 0.8rem !important;
-  z-index: 1;
-}
-
-.search-form.open .search-input {
-  display: block;
+.navbar-light {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /**
