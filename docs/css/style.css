@@ -333,7 +333,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -2572,31 +2572,31 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #025aa5;
+  background-color: rgba(0, 0, 0, 0.7);
   background-image: none;
-  border-color: #01549b;
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-secondary {
@@ -2745,32 +2745,32 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-primary {
-  color: #0275d8;
+  color: rgba(0, 0, 0, 0.7);
   background-image: none;
   background-color: transparent;
-  border-color: #0275d8;
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #0275d8;
+  color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
 }
 
 .btn-outline-primary:active, .btn-outline-primary.active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-outline-secondary {
@@ -4181,8 +4181,8 @@ tbody.collapse.show {
 }
 
 .card-primary {
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-primary .card-header,
@@ -4232,7 +4232,7 @@ tbody.collapse.show {
 
 .card-outline-primary {
   background-color: transparent;
-  border-color: #0275d8;
+  border-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-outline-secondary {
@@ -5141,7 +5141,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5244,7 +5244,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5639,11 +5639,11 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #0275d8 !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #025aa5 !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .bg-success {
@@ -8531,11 +8531,11 @@ a.text-muted:focus, a.text-muted:hover {
 }
 
 .text-primary {
-  color: #0275d8 !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #025aa5 !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .text-success {
@@ -11798,7 +11798,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .navigation-nav .nav-link {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Karla', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -11817,48 +11816,32 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
  * Post style
  */
 .post-container {
-  margin-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
 }
 
-.post-container .post-category {
-  text-align: center;
-}
-
-.post-container .post-category a {
-  color: #aaa;
-  font-family: cursive;
+.post-container:first-child {
+  border-top: 2px solid rgba(0, 0, 0, 0.7);
 }
 
 .post-container .post-title {
   text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .post-container .post-title a {
-  font-size: 1.5em;
-  font-family: serif;
+  font-size: 1.3em;
+  line-height: 1em;
+  letter-spacing: 2px;
   color: #292b2c;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.post-container .post-title a:hover {
-  color: #aaa;
-}
-
-.post-container .post-read-more {
-  padding: 1em 0;
-}
-
-.post-container .post-read-more a {
-  text-transform: uppercase;
-  color: #636c72;
-}
-
-.post-container .post-read-more a::after {
-  content: ' >';
-}
-
-.post-container .post-extra {
+.post-container .post-meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11866,32 +11849,27 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+  font-size: 12px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  border-top: 1px solid #eceeef;
-  border-bottom: 2px solid #000;
 }
 
-.post-container .post-extra .post-comments-indicator {
-  text-decoration: none;
-  color: #000;
+.post-container .post-read-more {
+  margin-top: 0.8em;
 }
 
-.post-container .post-extra .post-comments-indicator:hover {
-  color: #aaa;
+.post-container .post-read-more a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
 }
 
-.post-container .post-extra .post-share-label {
-  margin-left: auto;
-}
-
-.post-container .post-extra .post-share .nav-link {
-  padding: 0.5em;
-  color: #000;
-}
-
-.post-container .post-extra .post-share .nav-link:hover {
-  color: #aaa;
+@media (max-width: 991px) {
+  .post-container .post-image {
+    margin-bottom: 15px;
+  }
 }

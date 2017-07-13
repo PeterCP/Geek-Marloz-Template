@@ -9,7 +9,7 @@ $gray-custom: #aaa;
     .nav-link {
         text-transform: uppercase;
         text-align: center;
-        font-family: 'Karla', sans-serif;
+        // font-family: 'Karla', sans-serif;
         letter-spacing: 2px;
     }
     // @include media-breakpoint-up(md) {
@@ -28,42 +28,8 @@ $gray-custom: #aaa;
     padding-bottom: 12px;
 }
 .navbar-light {
-    border-bottom: 1px solid $navbar-light-disabled-color;
+    border-bottom: 1px solid $black-light;
 }
-
-// .static-nav-container {
-//     display: flex;
-//     align-self: flex-end;
-//     .navbar-nav {
-//         flex-direction: row;
-
-//         .nav-link {
-//             padding-left: 0.5rem;
-//             padding-right: 0.5rem;
-//         }
-//     }
-//     @include media-breakpoint-up(md) {
-//         order: 1;
-//     }
-// }
-// .search-form {
-//     flex-wrap: nowrap;
-//     .search-input {
-//         border: 2px solid #353535;
-//         display: none;
-//     }
-//     .search-btn {
-//         background: #353535;
-//         padding-left: 0.8rem !important;
-//         padding-right: 0.8rem !important;
-//         z-index: 1;
-//     }
-//     &.open {
-//         .search-input {
-//             display: block;
-//         }
-//     }
-// }
 
 
 
@@ -72,62 +38,51 @@ $gray-custom: #aaa;
  */
 
 .post-container {
-    margin-bottom: 100px;
-    .post-category {
-        text-align: center;
-        a {
-            color: $gray-custom;
-            font-family: cursive;
-        }
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $black-dark;
+
+    &:first-child {
+        border-top: 2px solid $black-dark;
     }
+
     .post-title {
         text-align: center;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid $black-light;
         a {
-            font-size: 1.5em;
-            font-family: serif;
+            font-size: 1.3em;
+            line-height: 1em;
+            letter-spacing: 2px;
             color: $gray-dark;
             text-decoration: none;
             text-transform: uppercase;
-            &:hover {
-                color: $gray-custom;
-            }
         }
     }
-    .post-read-more {
-        padding: 1em 0;
-        a {
-            text-transform: uppercase;
-            color: $gray-light;
-            &::after {
-                content: ' >';
-            }
-        }
-    }
-    .post-extra {
+
+    .post-meta {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        font-size: 12px;
+        letter-spacing: 2px;
         text-transform: uppercase;
-        border-top: 1px solid $gray-lighter;
-        border-bottom: 2px solid $black;
-        .post-comments-indicator {
-            text-decoration: none;
-            color: $black;
-            &:hover {
-                color: $gray-custom;
-            }
+    }
+
+    .post-read-more {
+        margin-top: 0.8em;
+        a {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
         }
-        .post-share-label {
-            margin-left: auto;
-        }
-        .post-share {
-            .nav-link {
-                padding: 0.5em;
-                color: $black;
-                &:hover {
-                    color: $gray-custom;
-                }
-            }
+    }
+
+    @include media-breakpoint-down(md) {
+        .post-image {
+            margin-bottom: 15px;
         }
     }
 }
