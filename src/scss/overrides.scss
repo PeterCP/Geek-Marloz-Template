@@ -1,0 +1,32 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$enable-rounded: false;
+
+$font-family-base: 'Karla', $font-family-sans-serif;
+
+$navbar-padding-y: 0;
+
+// $brand-inverse: #0c0c0c;
+
+// $navbar-inverse-color: rgba($white, 1);
+// $navbar-inverse-hover-color: rgba($white, 0.6);
+// $navbar-inverse-active-color: rgba($white, 1);
+// $navbar-inverse-disabled-color: rgba($white, 0.25);
+
+$navbar-light-color:                rgba($black,.5) !default;
+$navbar-light-hover-color:          rgba($black,.7) !default;
+$navbar-light-active-color:         rgba($black,.9) !default;
+$navbar-light-disabled-color:       rgba($black,.3) !default;
+
+$black-light: $navbar-light-disabled-color;
+$black-normal: $navbar-light-color;
+$black-dark: $navbar-light-hover-color;
+
+$brand-primary: rgba(0, 0, 0, 0.7);
+$btn-primary-color: $white;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: $btn-primary-bg;
+

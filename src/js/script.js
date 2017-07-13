@@ -20,4 +20,6 @@ $(document).ready(function () {
         }
         searchForm.toggleClass('open');
     });
+
+    $('#width-display').text('Width is ' + $(window).width());
 });
