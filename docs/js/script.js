@@ -15628,11 +15628,6 @@ $(document).ready(function () {
         }
         searchForm.toggleClass('open');
     });
-
-    $('#width-display').text('Width is ' + $(window).width());
-    $(window).resize(function () {
-        $('#width-display').text('Width is ' + $(window).width());
-    });
 });
 
 },{"bootstrap":1,"jquery":2,"tether":3}]},{},[4]);
