@@ -27,9 +27,9 @@ $gray-custom: #aaa;
     padding-top: 12px;
     padding-bottom: 12px;
 }
-.navbar-light {
-    border-bottom: 1px solid $black-light;
-}
+// .navbar-light {
+//     border-bottom: 1px solid $black-light;
+// }
 
 
 
@@ -40,11 +40,14 @@ $gray-custom: #aaa;
 .post-container {
     padding-top: 50px;
     padding-bottom: 50px;
-    border-bottom: 1px solid $black-normal;
 
-    &:first-child {
-        border-top: 1px solid $black-normal;
+    &:not(:last-child) {
+        border-bottom: 1px solid $black-normal;
     }
+
+    // &:first-child {
+    //     border-top: 1px solid $black-normal;
+    // }
 
     .post-title {
         text-align: center;
@@ -88,7 +91,7 @@ $gray-custom: #aaa;
 }
 
 @include media-breakpoint-down(xs) {
-    .container {
+    .post-list-container {
         padding-left: 25px;
         padding-right: 25px;
     }

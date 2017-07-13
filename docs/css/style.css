@@ -11790,21 +11790,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-bottom: 12px;
 }
 
-.navbar-light {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
 /**
  * Post style
  */
 .post-container {
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.post-container:first-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+.post-container:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .post-container .post-title {
@@ -11857,7 +11852,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 @media (max-width: 575px) {
-  .container {
+  .post-list-container {
     padding-left: 25px;
     padding-right: 25px;
   }
