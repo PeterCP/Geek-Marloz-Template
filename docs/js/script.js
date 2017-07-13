@@ -15630,9 +15630,12 @@ $(document).ready(function () {
     });
 
     $('#width-display').text('Width is ' + $(window).width());
+<<<<<<< HEAD
     $(window).resize(function () {
         $('#width-display').text('Width is ' + $(window).width());
     });
+=======
+>>>>>>> a743f76a630746ab7d440052b3c4fa2474764527
 });
 
 },{"bootstrap":1,"jquery":2,"tether":3}]},{},[4]);
