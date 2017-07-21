@@ -9,24 +9,22 @@ $font-family-base: 'Karla', $font-family-sans-serif;
 
 $navbar-padding-y: 0;
 
-// $brand-inverse: #0c0c0c;
+$black-normal:   rgba($black, 0.9);
+$black-light:    rgba($black, 0.7);
+$black-lighter:  rgba($black, 0.5);
+$black-lightest: rgba($black, 0.3);
 
-// $navbar-inverse-color: rgba($white, 1);
-// $navbar-inverse-hover-color: rgba($white, 0.6);
-// $navbar-inverse-active-color: rgba($white, 1);
-// $navbar-inverse-disabled-color: rgba($white, 0.25);
+$white-normal:   rgba($white, 0.9);
+$white-light:    rgba($white, 0.7);
+$white-lighter:  rgba($white, 0.5);
+$white-lightest: rgba($white, 0.3);
 
-$navbar-light-color:                rgba($black,.5) !default;
-$navbar-light-hover-color:          rgba($black,.7) !default;
-$navbar-light-active-color:         rgba($black,.9) !default;
-$navbar-light-disabled-color:       rgba($black,.3) !default;
+$navbar-light-color:          $black-lighter;
+$navbar-light-hover-color:    $black-light;
+$navbar-light-active-color:   $black-normal;
+$navbar-light-disabled-color: $black-lightest;
 
-$black-light: $navbar-light-disabled-color;
-$black-normal: $navbar-light-color;
-$black-dark: $navbar-light-hover-color;
-
-$brand-primary: rgba(0, 0, 0, 0.7);
-$btn-primary-color: $white;
-$btn-primary-bg: $brand-primary;
-$btn-primary-border: $btn-primary-bg;
-
+$brand-primary:      $black-light;
+$btn-primary-color:  $white;
+$btn-primary-bg:     $black-light;
+$btn-primary-border: $black-light;

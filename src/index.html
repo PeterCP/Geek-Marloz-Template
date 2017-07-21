@@ -6,122 +6,197 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img class="img-fluid" src="img/logo-geekmarloz.png" alt="Logo">
-                </div>
-                <div class="col-xs-12 justify-content-center">
-                    <h1 id="width-display"></h1>
+        <section id="header" class="p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-fluid" src="img/logo-geekmarloz.png" alt="Logo">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <nav class="navbar navbar-toggleable-sm navbar-light">
-            <button class="navbar-toggler align-self-center" type="button"
-                data-toggle="collapse" data-target="#navbar-content"
-                aria-expanded="false" aria-controls="navbar-content">
-                <div class="hamburger-icon">
-                    <span class="icon-bar icon-bar-1"></span>
-                    <span class="icon-bar icon-bar-2"></span>
-                    <span class="icon-bar icon-bar-3"></span>
+        <section id="navigation">
+            <nav class="navbar navbar-toggleable-sm navbar-light">
+                <button class="navbar-toggler align-self-center" type="button"
+                    data-toggle="collapse" data-target="#navbar-content"
+                    aria-expanded="false" aria-controls="navbar-content">
+                    <div class="hamburger-icon">
+                        <span class="icon-bar icon-bar-1"></span>
+                        <span class="icon-bar icon-bar-2"></span>
+                        <span class="icon-bar icon-bar-3"></span>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+                    <ul class="navbar-nav navigation-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                    </ul>
                 </div>
-            </button>
+            </nav>
+        </section>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
-                <ul class="navbar-nav navigation-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Posts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <section id="main" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <main class="post-list">
 
-        <div class="container post-list-container">
-            <div class="row">
-                <div class="col-md-8 post-list">
+                            <div class="post-container row">
+                                <div class="post-image col-md-6">
+                                    <img class="img-fluid" src="img/tommymaco.png" alt="Imagen">
+                                </div>
+                                <div class="post-content col-md-6">
+                                    <div class="post-title">
+                                        <a href="#">7 Cosas que impiden que avances</a>
+                                    </div>
+                                    <div class="post-meta">
+                                        <div class="post-date">13.07.2017</div>
+                                        <div class="post-category">Comunidad Geek</div>
+                                    </div>
+                                    <div class="post-excerpt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo massa.
+                                        Nam quis massa quam. Duis id leo ligula. Etiam faucibus tellus arcu, ut
+                                        commodo nulla malesuada quis. Nullam vulputate malesuada consequat. Cum
+                                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                        mus. Morbi sagittis sem nec lacus gravida, et interdum neque molestie.
+                                    </div>
+                                    <div class="post-read-more">
+                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="post-container row">
-                        <div class="post-image col-md-6">
-                            <img class="img-fluid" src="img/tommymaco.png" alt="Imagen">
-                        </div>
-                        <div class="post-content col-md-6">
-                            <div class="post-title">
-                                <a href="#">7 Cosas que impiden que avances</a>
+                            <div class="post-container row">
+                                <div class="post-image col-md-6">
+                                    <img class="img-fluid" src="img/tommymaco.png" alt="Imagen">
+                                </div>
+                                <div class="post-content col-md-6">
+                                    <div class="post-title">
+                                        <a href="#">7 Cosas que impiden que avances</a>
+                                    </div>
+                                    <div class="post-meta">
+                                        <div class="post-date">13.07.2017</div>
+                                        <div class="post-category">Comunidad Geek</div>
+                                    </div>
+                                    <div class="post-excerpt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo massa.
+                                        Nam quis massa quam. Duis id leo ligula. Etiam faucibus tellus arcu, ut
+                                        commodo nulla malesuada quis. Nullam vulputate malesuada consequat. Cum
+                                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                        mus. Morbi sagittis sem nec lacus gravida, et interdum neque molestie.
+                                    </div>
+                                    <div class="post-read-more">
+                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="post-meta">
-                                <div class="post-date">13.07.2017</div>
-                                <div class="post-category">Comunidad Geek</div>
+
+                            <div class="post-container row">
+                                <div class="post-image col-md-6">
+                                    <img class="img-fluid" src="img/tommymaco.png" alt="Imagen">
+                                </div>
+                                <div class="post-content col-md-6">
+                                    <div class="post-title">
+                                        <a href="#">7 Cosas que impiden que avances</a>
+                                    </div>
+                                    <div class="post-meta">
+                                        <div class="post-date">13.07.2017</div>
+                                        <div class="post-category">Comunidad Geek</div>
+                                    </div>
+                                    <div class="post-excerpt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo massa.
+                                        Nam quis massa quam. Duis id leo ligula. Etiam faucibus tellus arcu, ut
+                                        commodo nulla malesuada quis. Nullam vulputate malesuada consequat. Cum
+                                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                        mus. Morbi sagittis sem nec lacus gravida, et interdum neque molestie.
+                                    </div>
+                                    <div class="post-read-more">
+                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="post-excerpt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo massa.
-                                Nam quis massa quam. Duis id leo ligula. Etiam faucibus tellus arcu, ut
-                                commodo nulla malesuada quis. Nullam vulputate malesuada consequat. Cum
-                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                mus. Morbi sagittis sem nec lacus gravida, et interdum neque molestie.
-                            </div>
-                            <div class="post-read-more">
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                        </div>
+
+                        </main>
                     </div>
 
-                    <div class="post-container row">
-                        <div class="post-image col-md-6">
-                            <img class="img-fluid" src="img/tommymaco.png" alt="Imagen">
-                        </div>
-                        <div class="post-content col-md-6">
-                            <div class="post-title">
-                                <a href="#">7 Cosas que impiden que avances</a>
-                            </div>
-                            <div class="post-meta">
-                                <div class="post-date">13.07.2017</div>
-                                <div class="post-category">Comunidad Geek</div>
-                            </div>
-                            <div class="post-excerpt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo massa.
-                                Nam quis massa quam. Duis id leo ligula. Etiam faucibus tellus arcu, ut
-                                commodo nulla malesuada quis. Nullam vulputate malesuada consequat. Cum
-                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                mus. Morbi sagittis sem nec lacus gravida, et interdum neque molestie.
-                            </div>
-                            <div class="post-read-more">
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <aside class="sidebar">
+                            <h1>Sidebar</h1>
+                        </aside>
                     </div>
-
-                    <div class="post-container row">
-                        <div class="post-image col-md-6">
-                            <img class="img-fluid" src="img/tommymaco.png" alt="Imagen">
-                        </div>
-                        <div class="post-content col-md-6">
-                            <div class="post-title">
-                                <a href="#">7 Cosas que impiden que avances</a>
-                            </div>
-                            <div class="post-meta">
-                                <div class="post-date">13.07.2017</div>
-                                <div class="post-category">Comunidad Geek</div>
-                            </div>
-                            <div class="post-excerpt">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo massa.
-                                Nam quis massa quam. Duis id leo ligula. Etiam faucibus tellus arcu, ut
-                                commodo nulla malesuada quis. Nullam vulputate malesuada consequat. Cum
-                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                mus. Morbi sagittis sem nec lacus gravida, et interdum neque molestie.
-                            </div>
-                            <div class="post-read-more">
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="footer" class="bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <footer class="footer py-4">
+                            <div class="row py-4">
+                                <div class="col-sm-4 text-center">
+                                    <h4>About</h4>
+                                    <p><a href="#">Portfolio</a></p>
+                                    <p><a href="#">Media Kit</a></p>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <h4>Shop</h4>
+                                    <p><a href="#">Freebies</a></p>
+                                    <p><a href="#">Blog tips</a></p>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <h4>Políticas</h4>
+                                    <p><a href="#">Términos y condiciones</a></p>
+                                    <p><a href="#">FAQ</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <nav class="nav justify-content-center">
+                                        <div class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="fa fa-heart"></i>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="js/script.js"></script>
     </body>

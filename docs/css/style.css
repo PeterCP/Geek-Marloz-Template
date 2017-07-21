@@ -11777,6 +11777,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   left: 4px;
 }
 
+/**
+ * Navbar section
+ */
 .navigation-nav .nav-link {
   text-transform: uppercase;
   text-align: center;
@@ -11791,15 +11794,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /**
- * Post style
+ * Posts section
  */
-.post-container {
+.post-container:not(:first-child) {
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .post-container:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 50px;
 }
 
 .post-container .post-title {
@@ -11813,7 +11816,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 1.3em;
   line-height: 1em;
   letter-spacing: 2px;
-  color: #292b2c;
+  color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -11852,8 +11855,34 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 @media (max-width: 575px) {
-  .post-list-container {
-    padding-left: 25px;
-    padding-right: 25px;
+  .post-list {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+}
+
+/**
+ * Footer section
+ */
+#footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#footer h3, #footer h4 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#footer p {
+  font-size: 1em;
+  margin-bottom: 0.2rem;
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
 }

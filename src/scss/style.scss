@@ -3,23 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import "hamburger-icon";
 
-$gray-custom: #aaa;
+
+
+/**
+ * Navbar section
+ */
 
 .navigation-nav {
     .nav-link {
         text-transform: uppercase;
         text-align: center;
-        // font-family: 'Karla', sans-serif;
         letter-spacing: 2px;
     }
-    // @include media-breakpoint-up(md) {
-    //     .nav-item:not(:last-child) .nav-link::after {
-    //         color: $navbar-inverse-hover-color;
-    //         margin-left: 8px;
-    //         margin-right: -8px;
-    //         content: '|';
-    //     }
-    // }
 }
 .navbar-toggler {
     outline: none !important;
@@ -27,38 +22,34 @@ $gray-custom: #aaa;
     padding-top: 12px;
     padding-bottom: 12px;
 }
-// .navbar-light {
-//     border-bottom: 1px solid $black-light;
-// }
 
 
 
 /**
- * Post style
+ * Posts section
  */
 
 .post-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
 
-    &:not(:last-child) {
-        border-bottom: 1px solid $black-normal;
+    &:not(:first-child) {
+        padding-top: 50px;
     }
 
-    // &:first-child {
-    //     border-top: 1px solid $black-normal;
-    // }
+    &:not(:last-child) {
+        border-bottom: 1px solid $black-lighter;
+        padding-bottom: 50px;
+    }
 
     .post-title {
         text-align: center;
         padding-bottom: 15px;
         margin-bottom: 15px;
-        border-bottom: 1px solid $black-light;
+        border-bottom: 1px solid $black-lightest;
         a {
             font-size: 1.3em;
             line-height: 1em;
             letter-spacing: 2px;
-            color: $gray-dark;
+            color: $black-normal;
             text-decoration: none;
             text-transform: uppercase;
         }
@@ -91,8 +82,34 @@ $gray-custom: #aaa;
 }
 
 @include media-breakpoint-down(xs) {
-    .post-list-container {
-        padding-left: 25px;
-        padding-right: 25px;
+    .post-list {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+
+/**
+ * Footer section
+ */
+
+#footer {
+    background: rgba(0, 0, 0, 0.8);
+
+    h3, h4 {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1em;
+        margin-bottom: 0.2rem;
+    }
+    a {
+        color: $white-light;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $white-lightest;
     }
 }
