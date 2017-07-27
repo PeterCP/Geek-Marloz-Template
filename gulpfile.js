@@ -72,8 +72,8 @@ gulp.task('serve', function() {
         }
     });
     gulp
-        .watch(config.srcPath + '/**/*', ['build'])
-        .on('change', browserSync.reload);
+        .watch(config.srcPath + '/**/*', ['build']);
+    //     .on('change', browserSync.reload);
 });
 
 gulp.task('default', ['build']);
