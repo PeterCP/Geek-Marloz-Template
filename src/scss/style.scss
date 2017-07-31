@@ -27,6 +27,10 @@
 /**
  * Posts section
  */
+.post-list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .post-container {
 
     &:not(:first-child) {
@@ -43,13 +47,14 @@
         padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: 1px solid $black-lightest;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
         a {
             font-size: 1.3em;
             line-height: 1em;
-            letter-spacing: 2px;
             color: $black-normal;
             text-decoration: none;
-            text-transform: uppercase;
         }
     }
 
@@ -61,6 +66,10 @@
         font-size: 12px;
         letter-spacing: 2px;
         text-transform: uppercase;
+
+        a {
+            color: $black-normal;
+        }
     }
 
     .post-read-more {
@@ -76,13 +85,6 @@
         .post-image {
             margin-bottom: 15px;
         }
-    }
-}
-
-@include media-breakpoint-down(xs) {
-    .post-list {
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 }
 
@@ -162,9 +164,13 @@
     }
     a {
         color: $white-light;
-    }
-    a:hover {
-        text-decoration: none;
-        color: $white-lightest;
+
+        &:hover {
+            text-decoration: none;
+            color: $white-lightest;
+        }
+        &.active {
+            color: $white-normal;
+        }
     }
 }
