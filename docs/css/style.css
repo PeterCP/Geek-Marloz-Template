@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Karla");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -333,7 +333,7 @@ html {
 }
 
 body {
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -5127,7 +5127,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5230,7 +5230,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -11778,12 +11778,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /**
+ * Utilities section
+ */
+/**
  * Navbar section
  */
 .navigation-nav .nav-link {
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .navbar-toggler {
@@ -11815,15 +11818,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .post-container .post-title a {
-  font-size: 1.3em;
-  line-height: 1em;
-  color: rgba(0, 0, 0, 0.9);
+  font-size: 22px;
+  line-height: 28px;
   text-decoration: none;
+  font-weight: 600;
+  color: #e16676;
 }
 
 .post-container .post-meta {
@@ -11844,7 +11848,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .post-container .post-meta a {
-  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  color: #e16676;
+}
+
+.post-container .post-content a {
+  font-weight: 600;
+  color: #e16676;
 }
 
 .post-container .post-read-more {
@@ -11852,9 +11862,26 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .post-container .post-read-more a {
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.post-container .post-share-buttons-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.post-container .post-share-buttons-container .title {
+  margin: 0;
+  display: inline-block;
+}
+
+.post-container .post-share-buttons-container .post-share-buttons {
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 991px) {
@@ -11863,15 +11890,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.pagination-links {
+  margin-top: 5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 /**
  * Sidebar section
  */
 .sidebar .widget .widget-title {
   margin-bottom: 0.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   text-align: center;
   font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .sidebar .widget:not(:last-child) {
@@ -11896,10 +11929,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-bottom: 0.2rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
   text-align: justify;
   font-size: 0.8rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sidebar .popular-post-list .popular-post-container .popular-post-title a {
+  font-weight: 600;
+  color: #e16676;
 }
 
 .sidebar .popular-post-list .popular-post-container .popular-post-excerpt {
@@ -11920,12 +11958,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
  * Footer section
  */
 #footer {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-#footer h3, #footer h4 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  background: #e16676;
 }
 
 #footer p {

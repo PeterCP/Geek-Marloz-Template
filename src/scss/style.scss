@@ -1,8 +1,25 @@
 @import "bootstrap";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 @import "hamburger-icon";
 
+
+
+$custom-color: #e16676;
+
+
+
+/**
+ * Utilities section
+ */
+@mixin title-format() {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+@mixin make-link() {
+    font-weight: 600;
+    color: $custom-color;
+}
 
 
 /**
@@ -10,9 +27,9 @@
  */
 .navigation-nav {
     .nav-link {
-        text-transform: uppercase;
         text-align: center;
-        letter-spacing: 2px;
+
+        @include title-format();
     }
 }
 .navbar-toggler {
@@ -47,14 +64,15 @@
         padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: 1px solid $black-lightest;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+
+        @include title-format();
 
         a {
-            font-size: 1.3em;
-            line-height: 1em;
-            color: $black-normal;
+            font-size: 22px;
+            line-height: 28px;
+            // color: $black-normal;
             text-decoration: none;
+            @include make-link();
         }
     }
 
@@ -64,20 +82,43 @@
         justify-content: space-between;
         margin: 10px 0;
         font-size: 12px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+
+        @include title-format();
 
         a {
-            color: $black-normal;
+            // color: $black-normal;
+            @include make-link();
+        }
+    }
+
+    .post-content {
+        a {
+            @include make-link();
         }
     }
 
     .post-read-more {
         margin-top: 0.8em;
         a {
-            text-transform: uppercase;
-            letter-spacing: 2px;
             font-size: 14px;
+
+            @include title-format();
+        }
+    }
+
+    .post-share-buttons-container {
+        margin-top: ($spacer-y * 1.5);
+        text-align: center;
+
+        .title {
+            margin: 0;
+            display: inline-block;
+        }
+        .post-share-buttons {
+            display: inline-block;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid $black-lightest;
         }
     }
 
@@ -86,6 +127,11 @@
             margin-bottom: 15px;
         }
     }
+}
+.pagination-links {
+    margin-top: ($spacer-y * 5); // $spacer-y = 1rem
+
+    @include title-format();
 }
 
 
@@ -97,10 +143,10 @@
     .widget {
         .widget-title {
             margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
             text-align: center;
             font-size: 1.2rem;
+
+            @include title-format();
         }
         &:not(:last-child) {
             margin-bottom: 1.5rem;
@@ -126,10 +172,15 @@
                 margin-bottom: 0.2rem;
                 padding-bottom: 0.2rem;
                 border-bottom: 1px solid $black-lightest;
-                text-transform: uppercase;
                 text-align: justify;
                 font-size: 0.8rem;
-                letter-spacing: 2px;
+
+                @include title-format();
+
+                a {
+                    // color: $black-normal;
+                    @include make-link();
+                }
             }
             .popular-post-excerpt {
                 text-align: justify;
@@ -152,12 +203,8 @@
  * Footer section
  */
 #footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: $custom-color;
 
-    h3, h4 {
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
     p {
         font-size: 1em;
         margin-bottom: 0.2rem;
