@@ -71,7 +71,7 @@ $custom-color: #e16676;
             font-size: 22px;
             line-height: 28px;
             // color: $black-normal;
-            text-decoration: none;
+            // text-decoration: none;
             @include make-link();
         }
     }
@@ -112,7 +112,6 @@ $custom-color: #e16676;
 
         .title {
             margin: 0;
-            display: inline-block;
         }
         .post-share-buttons {
             display: inline-block;

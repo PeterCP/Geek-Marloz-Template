@@ -11825,7 +11825,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .post-container .post-title a {
   font-size: 22px;
   line-height: 28px;
-  text-decoration: none;
   font-weight: 600;
   color: #e16676;
 }
@@ -11874,7 +11873,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .post-container .post-share-buttons-container .title {
   margin: 0;
-  display: inline-block;
 }
 
 .post-container .post-share-buttons-container .post-share-buttons {
