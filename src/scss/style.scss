@@ -5,10 +5,6 @@
 
 
 
-$custom-color: #e16676;
-
-
-
 /**
  * Utilities section
  */
@@ -18,10 +14,14 @@ $custom-color: #e16676;
 }
 @mixin make-link() {
     font-weight: 600;
-    color: $custom-color;
+    color: $pink-custom;
 }
 .title {
     @include title-format();
+}
+.btn-outline-primary:hover {
+    background: $pink-custom;
+    border-color: $pink-custom;
 }
 
 
@@ -31,6 +31,7 @@ $custom-color: #e16676;
 .navigation-nav {
     .nav-link {
         text-align: center;
+        font-size: 14px;
 
         @include title-format();
     }
@@ -212,7 +213,7 @@ $custom-color: #e16676;
  * Footer section
  */
 #footer {
-    background: $custom-color;
+    background: $pink-custom;
 
     p {
         font-size: 1em;
