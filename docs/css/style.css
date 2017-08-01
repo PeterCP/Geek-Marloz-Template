@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:400,700");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -333,7 +333,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -2564,31 +2564,31 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.7);
+  background-color: #0066cc;
+  border-color: #0066cc;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.7);
+  background-color: #004d99;
+  border-color: #00478f;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.7);
+  background-color: #0066cc;
+  border-color: #0066cc;
 }
 
 .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #004d99;
   background-image: none;
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: #00478f;
 }
 
 .btn-secondary {
@@ -2737,32 +2737,32 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-primary {
-  color: rgba(0, 0, 0, 0.7);
+  color: #0066cc;
   background-image: none;
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: #0066cc;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.7);
+  background-color: #0066cc;
+  border-color: #0066cc;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: rgba(0, 0, 0, 0.7);
+  color: #0066cc;
   background-color: transparent;
 }
 
 .btn-outline-primary:active, .btn-outline-primary.active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.7);
+  background-color: #0066cc;
+  border-color: #0066cc;
 }
 
 .btn-outline-secondary {
@@ -4222,7 +4222,7 @@ tbody.collapse.show {
 
 .card-outline-primary {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: #0066cc;
 }
 
 .card-outline-secondary {
@@ -5127,7 +5127,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5230,7 +5230,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -11781,13 +11781,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
  * Utilities section
  */
 .title {
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.btn-outline-primary:hover {
-  background: #e16676;
-  border-color: #e16676;
+.btn-primary:hover {
+  color: #0066cc;
+  background-color: transparent;
+  border-color: #0066cc;
 }
 
 /**
@@ -11838,12 +11840,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 22px;
   line-height: 28px;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .post-container .post-title a {
-  font-weight: 600;
+  font-weight: 700;
   color: #e16676;
 }
 
@@ -11865,7 +11868,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .post-container .post-meta a {
-  font-weight: 600;
+  font-weight: 700;
   color: #e16676;
 }
 
@@ -11875,7 +11878,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .post-container .post-content a {
-  font-weight: 600;
+  font-weight: 700;
   color: #e16676;
 }
 
@@ -11959,12 +11962,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   text-align: justify;
   font-size: 0.8rem;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .sidebar .popular-post-list .popular-post-container .popular-post-title a {
-  font-weight: 600;
+  font-weight: 700;
   color: #e16676;
 }
 

@@ -5,7 +5,8 @@
 
 $enable-rounded: false;
 
-$font-family-base: 'Montserrat', $font-family-sans-serif;
+$font-family-base: 'Karla', $font-family-sans-serif;
+$font-family-titles: 'Montserrat', $font-family-sans-serif;
 
 $navbar-padding-y: 0;
 
@@ -20,6 +21,7 @@ $white-lighter:  rgba($white, 0.5);
 $white-lightest: rgba($white, 0.3);
 
 $pink-custom: #e16676;
+$blue-custom: #0066cc;
 
 $navbar-light-color:          $black-lighter;
 $navbar-light-hover-color:    $pink-custom;
@@ -28,5 +30,5 @@ $navbar-light-disabled-color: $black-lightest;
 
 $brand-primary:      $black-light;
 $btn-primary-color:  $white;
-$btn-primary-bg:     $black-light;
-$btn-primary-border: $black-light;
+$btn-primary-bg:     $blue-custom;
+$btn-primary-border: $blue-custom;

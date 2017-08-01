@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:400,700');
 @import "hamburger-icon";
 
 
@@ -13,16 +13,19 @@
     text-transform: uppercase;
 }
 @mixin make-link() {
-    font-weight: 600;
+    font-weight: 700;
     color: $pink-custom;
 }
 .title {
+    font-family: $font-family-titles;
     @include title-format();
 }
-.btn-outline-primary:hover {
-    background: $pink-custom;
-    border-color: $pink-custom;
+.btn-primary:hover {
+    color: $blue-custom;
+    background-color: transparent;
+    border-color: $blue-custom;
 }
+
 
 
 /**
@@ -77,6 +80,7 @@
         border-bottom: 1px solid $black-lightest;
         font-size: 22px;
         line-height: 28px;
+        font-family: $font-family-titles;
 
         @include title-format();
 
@@ -196,6 +200,7 @@
                 border-bottom: 1px solid $black-lightest;
                 text-align: justify;
                 font-size: 0.8rem;
+                font-family: $font-family-titles;
 
                 @include title-format();
 
