@@ -152,7 +152,7 @@ $custom-color: #e16676;
     .title {
         margin-bottom: 0.5rem;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         @include title-format();
     }
@@ -228,5 +228,8 @@ $custom-color: #e16676;
         &.active {
             color: $white-normal;
         }
+    }
+    .title {
+        font-size: 1.2rem;
     }
 }

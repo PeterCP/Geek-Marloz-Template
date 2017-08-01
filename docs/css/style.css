@@ -11911,7 +11911,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .widget .title {
   margin-bottom: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -11986,4 +11986,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 #footer a.active {
   color: rgba(255, 255, 255, 0.9);
+}
+
+#footer .title {
+  font-size: 1.2rem;
 }
