@@ -11960,7 +11960,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-bottom: 0.2rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  text-align: justify;
   font-size: 0.8rem;
   font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 2px;
@@ -11973,7 +11972,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .sidebar .popular-post-list .popular-post-container .popular-post-excerpt {
-  text-align: justify;
   font-size: 0.8rem;
 }
 

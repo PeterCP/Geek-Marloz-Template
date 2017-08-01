@@ -198,19 +198,18 @@
                 margin-bottom: 0.2rem;
                 padding-bottom: 0.2rem;
                 border-bottom: 1px solid $black-lightest;
-                text-align: justify;
+                // text-align: justify;
                 font-size: 0.8rem;
                 font-family: $font-family-titles;
 
                 @include title-format();
 
                 a {
-                    // color: $black-normal;
                     @include make-link();
                 }
             }
             .popular-post-excerpt {
-                text-align: justify;
+                // text-align: justify;
                 font-size: 0.8rem;
             }
             &:not(:last-child) {
