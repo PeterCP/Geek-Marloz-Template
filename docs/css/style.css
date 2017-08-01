@@ -11906,9 +11906,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /**
- * Sidebar section
+ * Sidebar and widgets section
  */
-.sidebar .widget .title {
+.widget .title {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 1.2rem;
@@ -11916,8 +11916,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   text-transform: uppercase;
 }
 
-.sidebar .widget:not(:last-child) {
-  margin-bottom: 1.5rem;
+.widget:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .sidebar .popular-post-list .popular-post-container {

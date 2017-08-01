@@ -146,21 +146,21 @@ $custom-color: #e16676;
 
 
 /**
- * Sidebar section
+ * Sidebar and widgets section
  */
-.sidebar {
-    .widget {
-        .title {
-            margin-bottom: 0.5rem;
-            text-align: center;
-            font-size: 1.2rem;
+.widget {
+    .title {
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
 
-            @include title-format();
-        }
-        &:not(:last-child) {
-            margin-bottom: 1.5rem;
-        }
+        @include title-format();
     }
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+.sidebar {
 
     .popular-post-list {
         .popular-post-container {
