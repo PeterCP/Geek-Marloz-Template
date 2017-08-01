@@ -11780,6 +11780,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /**
  * Utilities section
  */
+.title {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 /**
  * Navbar section
  */
@@ -11818,13 +11823,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  line-height: 28px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .post-container .post-title a {
-  font-size: 22px;
-  line-height: 28px;
   font-weight: 600;
   color: #e16676;
 }
@@ -11873,6 +11878,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .post-container .post-share-buttons-container .title {
   margin: 0;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .post-container .post-share-buttons-container .post-share-buttons {
@@ -11880,6 +11887,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.post-container .post-share-buttons-container .post-share-buttons a i + span {
+  margin-left: 0.5em;
 }
 
 @media (max-width: 991px) {
@@ -11897,7 +11908,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /**
  * Sidebar section
  */
-.sidebar .widget .widget-title {
+.sidebar .widget .title {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 1.2rem;

@@ -20,6 +20,9 @@ $custom-color: #e16676;
     font-weight: 600;
     color: $custom-color;
 }
+.title {
+    @include title-format();
+}
 
 
 /**
@@ -64,12 +67,12 @@ $custom-color: #e16676;
         padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: 1px solid $black-lightest;
+        font-size: 22px;
+        line-height: 28px;
 
         @include title-format();
 
         a {
-            font-size: 22px;
-            line-height: 28px;
             // color: $black-normal;
             // text-decoration: none;
             @include make-link();
@@ -112,12 +115,19 @@ $custom-color: #e16676;
 
         .title {
             margin: 0;
+            font-size: 22px;
+            line-height: 28px;
         }
         .post-share-buttons {
             display: inline-block;
             margin-top: 10px;
             padding-top: 10px;
             border-top: 1px solid $black-lightest;
+            a {
+                i + span {
+                    margin-left: 0.5em;
+                }
+            }
         }
     }
 
@@ -140,7 +150,7 @@ $custom-color: #e16676;
  */
 .sidebar {
     .widget {
-        .widget-title {
+        .title {
             margin-bottom: 0.5rem;
             text-align: center;
             font-size: 1.2rem;
