@@ -81,8 +81,6 @@
         @include title-format();
 
         a {
-            // color: $black-normal;
-            // text-decoration: none;
             @include make-link();
         }
     }
@@ -91,15 +89,19 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 10px 0;
+        margin-top: 1rem;
         font-size: 12px;
 
         @include title-format();
 
         a {
-            // color: $black-normal;
             @include make-link();
         }
+    }
+
+    .post-excerpt {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .post-content {
@@ -113,7 +115,6 @@
     }
 
     .post-read-more {
-        margin-top: 0.8em;
         a {
             font-size: 14px;
 
