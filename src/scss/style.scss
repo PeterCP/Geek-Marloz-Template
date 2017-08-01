@@ -49,8 +49,8 @@
  * Posts section
  */
 .post-list {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .post-container {
 
@@ -98,6 +98,10 @@
     .post-content {
         a {
             @include make-link();
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     }
 

@@ -11811,8 +11811,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
  * Posts section
  */
 .post-list {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .post-container:not(:first-child) {
@@ -11865,6 +11865,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .post-container .post-content a {
   font-weight: 600;
   color: #e16676;
+}
+
+.post-container .post-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .post-container .post-read-more {
