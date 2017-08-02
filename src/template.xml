@@ -12,13 +12,187 @@
         <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" />
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-        <b:skin></b:skin>
-        <!-- <b:template-skin></b:template-skin> -->
-        <b:include data="blog" name="all-head-content" />
-
         <title><data:blog.pageTitle /></title>
 
         <link rel="stylesheet" href="https://petercp.github.io/geek-marloz-template/css/style.css" />
+
+        <style type='text/css'>
+            .sidebar .PopularPosts ul {
+                counter-reset: popularcount;
+                margin: 0;
+                padding: 0;
+            }
+            .sidebar .PopularPosts ul li {
+                width: 100%;
+                list-style: none !important;
+                padding: 0 !important;
+                margin-bottom: 20px;
+                position: relative;
+                border: 0;
+                text-align: center;
+            }
+            .sidebar .PopularPosts .item-thumbnail a {
+                clip: auto;
+                display: block;
+                height: auto;
+                height: 120px;
+            }
+            .sidebar .PopularPosts .item-thumbnail {
+                width: 100%;
+                height: 120px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 15px;
+            }
+            .sidebar .PopularPosts .item-thumbnail::before {
+                background: rgba(0, 0, 0, 0);
+                border-bottom: 29px solid #fff;
+                border-left: 29px solid transparent;
+                border-right: 29px solid transparent;
+                bottom: 0px;
+                content: "";
+                height: 0;
+                width: 0;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                z-index: 3;
+            }
+            .sidebar .PopularPosts .item-thumbnail:after {
+                color: #000;
+                content: counter(popularcount, decimal);
+                counter-increment: popularcount;
+                font: 13px "Times New Roman", Times, FreeSerif, serif;
+                list-style-type: none;
+                position: absolute;
+                bottom: 0;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                z-index: 4;
+            }
+            .sidebar .PopularPosts .item-thumbnail img {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+            .sidebar .PopularPosts .item-title {
+                font: 15px 'Karla', sans-serif;
+                text-transform: uppercase;
+                margin: 0 auto;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #000;
+            }
+            .sidebar .PopularPosts .item-title a {
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar .PopularPosts .item-snippet {
+                padding: 10px 15px;
+                font: 13px "Times New Roman", Times, FreeSerif, serif;
+            }
+        </style>
+
+        <script type='text/javascript'>
+            //<![CDATA[
+            var relatedTitles = new Array();
+            var relatedTitlesNum = 0;
+            var relatedUrls = new Array();
+            var thumburl = new Array();
+
+            function related_results_labels_thumbs(json) {
+                for (var i = 0; i < json.feed.entry.length; i++) {
+                    var entry = json.feed.entry[i];
+                    relatedTitles[relatedTitlesNum] = entry.title.$t;
+                    try {
+                        thumburl[relatedTitlesNum] = entry.gform_foot.url;
+                    } catch (error) {
+                        s = entry.content.$t;
+                        a = s.indexOf("<img");
+                        b = s.indexOf("src=\"", a);
+                        c = s.indexOf("\"", b + 5);
+                        d = s.substr(b + 5, c - b - 5);
+                        if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
+                            thumburl[relatedTitlesNum] = d;
+                        } else thumburl[relatedTitlesNum] = 'http://2.bp.blogspot.com/-ex3V86fj4dQ/UrCQQa4cLsI/AAAAAAAAFdA/j2FCTmGOrog/s1600/no-thumbnail.png';
+                    }
+                    if (relatedTitles[relatedTitlesNum].length > 35) relatedTitles[relatedTitlesNum] = relatedTitles[relatedTitlesNum].substring(0, 35) + "...";
+                    for (var k = 0; k < entry.link.length; k++) {
+                        if (entry.link[k].rel == 'alternate') {
+                            relatedUrls[relatedTitlesNum] = entry.link[k].href;
+                            relatedTitlesNum++;
+                        }
+                    }
+                }
+            }
+
+            function removeRelatedDuplicates_thumbs() {
+                var tmp = new Array(0);
+                var tmp2 = new Array(0);
+                var tmp3 = new Array(0);
+                for (var i = 0; i < relatedUrls.length; i++) {
+                    if (!contains_thumbs(tmp, relatedUrls[i])) {
+                        tmp.length += 1;
+                        tmp[tmp.length - 1] = relatedUrls[i];
+                        tmp2.length += 1;
+                        tmp3.length += 1;
+                        tmp2[tmp2.length - 1] = relatedTitles[i];
+                        tmp3[tmp3.length - 1] = thumburl[i];
+                    }
+                }
+                relatedTitles = tmp2;
+                relatedUrls = tmp;
+                thumburl = tmp3;
+            }
+
+            function contains_thumbs(a, e) {
+                for (var j = 0; j < a.length; j++)
+                    if (a[j] == e) return true;
+                return false;
+            }
+
+            function printRelatedLabels_thumbs() {
+                for (var i = 0; i < relatedUrls.length; i++) {
+                    if ((relatedUrls[i] == currentposturl) || (!(relatedTitles[i]))) {
+                        relatedUrls.splice(i, 1);
+                        relatedTitles.splice(i, 1);
+                        thumburl.splice(i, 1);
+                        i--;
+                    }
+                }
+                if (relatedUrls.length > 0) {
+                    document.write('<div class="title">' + relatedpoststitle + '</div>');
+                    document.write('<div class="row">');
+                    var r = Math.floor((relatedTitles.length - 1) * Math.random());
+                    for (var i = 0; i < relatedTitles.length && i < maxresults; i++) {
+                        document.write('<div class="col-sm-4">');
+                            document.write('<a href="' + relatedUrls[r] + '">');
+                                document.write('<img class="img-fluid" src="' + thumburl[r] + '" />');
+                                document.write('<div class="post-related-title">' + relatedTitles[r] + '</div>');
+                            document.write('</a>');
+                        document.write('</div>');
+
+                        if (r < relatedTitles.length - 1) {
+                            r++;
+                        } else {
+                            r = 0;
+                        }
+                    }
+                }
+                document.write('</div>');
+                //relatedUrls.splice(0, relatedUrls.length);
+                //thumburl.splice(0, thumburl.length);
+                //relatedTitles.splice(0, relatedTitles.length);
+            };
+            //]]>
+        </script>
+
+        <b:skin></b:skin>
+        <!-- <b:template-skin></b:template-skin> -->
+        <b:include data="blog" name="all-head-content" />
     </head>
     <body>
 
@@ -85,7 +259,7 @@
                         <b:section id="post-list" name="Main Content" showaddelements="yes">
                             <b:widget id="Blog1" locked="false" title="Entradas del Blog" type="Blog">
                                 <b:includable id="main" var="top">
-                                    <b:include data="top" name="status-message" />
+                                    <!-- <b:include data="top" name="status-message" /> -->
                                     
                                     <div class="post-list">
                                         <b:loop values="data:posts" var="post">
@@ -164,6 +338,8 @@
                                         </div>
 
                                         <b:include name="post-share" data="post" />
+
+                                        <b:include name="post-related" data="post" />
                                     </div>
                                 </b:includable>
 
@@ -185,6 +361,26 @@
                                             </a>
                                         </div>
                                     </div>
+                                </b:includable>
+
+                                <b:includable id="post-related" var="post">
+                                    <!-- Related Posts with Thumbnails Code Start-->
+                                    <b:if cond='data:blog.pageType == "item"'>
+                                        <div class="post-related">
+                                            <b:loop values="data:post.labels" var="label">
+                                                <b:if cond='data:label.isLast != "true"'></b:if>
+                                                <script expr:src='"/feeds/posts/default/-/" + data:label.name + "?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=5"' type="text/javascript" />
+                                            </b:loop>
+                                            <script type="text/javascript">
+                                                var currentposturl = "<data:post.url/>";
+                                                var maxresults = 3;
+                                                var relatedpoststitle = "Posts Relacionados";
+                                                removeRelatedDuplicates_thumbs();
+                                                printRelatedLabels_thumbs();
+                                            </script>
+                                        </div>
+                                    </b:if>
+                                    <!-- Related Posts with Thumbnails Code End-->
                                 </b:includable>
 
                                 <b:includable id="pagination-links">
@@ -230,7 +426,7 @@
                         <b:section class="sidebar" id="sidebar" showaddelements="yes">
 
                             <b:widget class="popular-posts-widget" id="PopularPosts1" locked="false" title="Popular Posts" type="PopularPosts">
-                                <b:includable id="main">
+                                <!-- <b:includable id="main">
                                     <b:if cond='data:title != ""'>
                                         <div class="title"><data:title /></div>
                                     </b:if>
@@ -256,7 +452,7 @@
                                             </div>
                                         </b:loop>
                                     </div>
-                                </b:includable>
+                                </b:includable> -->
                             </b:widget>
 
                             <b:widget id="Label1" class="labels-widget" locked="false" title="Labels" type="Label">
@@ -411,6 +607,17 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            (function (w,i,d,g,e,t,s) {
+                w[d] = w[d] || [];
+                t = i.createElement(g);
+                t.async = 1;
+                t.src = e;
+                s = i.getElementsByTagName(g)[0];
+                s.parentNode.insertBefore(t, s);
+            })(window, document, '_gscq', 'script', '//widgets.getsitecontrol.com/97317/script.js');
+        </script>
 
         <script src="https://petercp.github.io/geek-marloz-template/js/script.js"></script>
     </body>

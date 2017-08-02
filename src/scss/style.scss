@@ -148,6 +148,27 @@
         }
     }
 
+    .post-related {
+        margin-top: ($spacer-y * 3);
+        text-align: center;
+
+        .title {
+            font-size: 22px;
+            line-height: 28px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid $black-lightest;
+        }
+        img {
+            height: 200px;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: $pink-custom;
+            @include title-format();
+        }
+    }
+
     @include media-breakpoint-down(md) {
         .post-image {
             margin-bottom: 15px;
@@ -170,8 +191,6 @@
         margin-bottom: 0.5rem;
         text-align: center;
         font-size: 1rem;
-
-        @include title-format();
     }
     &:not(:last-child) {
         margin-bottom: 3rem;

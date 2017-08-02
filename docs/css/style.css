@@ -11915,6 +11915,30 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-left: 0.5em;
 }
 
+.post-container .post-related {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.post-container .post-related .title {
+  font-size: 22px;
+  line-height: 28px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.post-container .post-related img {
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.post-container .post-related a {
+  color: #e16676;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 991px) {
   .post-container .post-image {
     margin-bottom: 15px;
@@ -11934,8 +11958,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .widget:not(:last-child) {
