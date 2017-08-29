@@ -230,7 +230,7 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
                             <ul class="navbar-nav navigation-nav">
                                 <b:loop values="data:links" var="link">
-                                    <b:if cond="data:link.isCurrentPage">
+                                    <b:if cond="data:link.href == data:blog.url">
                                         <li class="nav-item active">
                                             <a expr:href="data:link.href" class="nav-link">
                                                 <data:link.title />
@@ -567,40 +567,7 @@
                                 </b:section>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <nav class="nav justify-content-center">
-                                        <div class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </div>
-                                        <div class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                        <div class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </div>
-                                        <div class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </div>
-                                        <div class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="fa fa-heart"></i>
-                                            </a>
-                                        </div>
-                                        <div class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </div>
-                                    </nav>
-                                </div>
+                                <b:section id="footer-full-width" class="col-sm-12"></b:section>
                             </div>
                         </footer>
                     </div>
